@@ -3,7 +3,8 @@ var ctx = canvas.getContext('2d');
 var scrollYPos=0;
 var img = new Image();
 
-img.src = "lowQualityhalfResolution/KoreaToGermany_0.jpg"
+imgfolder = 'Resolution_half'
+img.src = imgfolder + "/KoreaToGermany_0.jpg"
 
 
 canvas.width  = window.innerWidth;
@@ -17,7 +18,7 @@ function windowResize() {
 window.addEventListener('resize', function(e){
   windowResize();
   scrollYPos = Math.round(window.scrollY/20);
-  img.src = "lowQualityhalfResolution/KoreaToGermany_"+scrollYPos +".jpg"
+  img.src = imgfolder + "/KoreaToGermany_"+scrollYPos +".jpg"
 
 });
 
@@ -39,7 +40,7 @@ window.addEventListener('scroll',function(e){
 })
 
 function player(num){
-  img.src = "lowQualityhalfResolution/KoreaToGermany_"+num +".jpg"
+  img.src = imgfolder +"/KoreaToGermany_"+num +".jpg"
 }
 
 //playSequence-> player -> new image LOAD -> addEventLister run
