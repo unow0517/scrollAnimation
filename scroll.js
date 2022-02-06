@@ -3,12 +3,12 @@ var ctx = canvas.getContext('2d');
 var scrollYPos=0;
 var img = new Image();
 
-imgfolder = 'Resolution_half'
+imgfolder = 'FullResolution'
 img.src = imgfolder + "/KoreaToGermany_0.jpg"
 
 
-canvas.width  = window.innerWidth;
-canvas.height = window.innerHeight;
+canvas.width  = 0.8 * window.innerWidth;
+canvas.height = 0.5 * window.innerHeight;
 
 function windowResize() {
   canvas.width  = window.innerWidth;

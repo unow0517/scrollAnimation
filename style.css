@@ -16,7 +16,16 @@
 
 #img-sequence{
   position:fixed;
-  top:0px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
   object-fit: cover;
   z-index: -1;
 }
+
+/* #img-sequence{
+  position:fixed;
+  top:0px;
+  object-fit: cover;
+  z-index: -1;
+} */
