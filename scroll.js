@@ -3,7 +3,7 @@ var ctx = canvas.getContext('2d');
 var scrollYPos=0;
 var img = new Image();
 
-imgfolder = 'FullResolution'
+imgfolder = 'Resolution_half'
 img.src = imgfolder + "/KoreaToGermany_0.jpg"
 
 
