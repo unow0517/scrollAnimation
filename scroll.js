@@ -11,8 +11,8 @@ canvas.width  = 0.8 * window.innerWidth;
 canvas.height = 0.5 * window.innerHeight;
 
 function windowResize() {
-  canvas.width  = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.width  = 0.8 * window.innerWidth;
+  canvas.height = 0.5 * window.innerHeight;
 };
 
 window.addEventListener('resize', function(e){
